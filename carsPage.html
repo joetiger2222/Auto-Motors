@@ -1,0 +1,117 @@
+<!DOCTYPE>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="car page.png">
+		<meta charset="utf-8">
+		<title> AUTO MOTORS </title>
+		<link rel="stylesheet" href="carsPage.css" type="text/css" />
+		<script src="joeJs.js"></script>
+	</head>
+	<body>
+         <div class="header">
+		<div>
+			<h3 style="position: absolute;transform: translate(1490px,34px); color: white">Dark Mode</h3>
+		<img style="position: absolute;transform: translate(1520px,28px);" src="whitemoonTest.png">
+		</div>
+		<div style="position: absolute;transform: translate(1595px,37px);">
+			<label class="switch">
+			<input type="checkbox" id="dark" onclick="darkMode()">
+			<span class="slider round"></span>
+			</label>
+		</div>
+            <a href="Home.HTML">
+		<span class="logo"><img src="Home-logo1.png" ></span></a>
+                <a href="sign%20up.html">
+		<span class="signout"><img src="Sign Out.png"></span></a>
+		<div class="Intro">
+			<span class="buttons">
+                <a href="Home.HTML">
+				<span class="buttons1">
+				<input type="button" value="HOME"></span></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="carsPage.html">
+				<span class="buttons2">
+				<input type="button" value="CARS"></span></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="contactus.html">
+				<span class="buttons3">
+				<input type="button" value="CONTACT US"></span></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="aboutus.html">
+				<span class="buttons4">
+				<input type="button" value="ABOUT US"></span></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="buttons5">
+				<input style="font-size: 32px;" type="button" value="▼" onclick="moreoption()"></span>
+			</span>
+            <span><ul style="list-style: none;list-style-position: outside;width: 200px;background-color: #454E68;opacity: 0.9;border-radius: 12px;padding-top: 15px;position: absolute;z-index:10;font-family: Helvetica;font-size:16px; transform: translate(1300px,60px);display: none" id="pageList">
+			<a href="find.html"><li><img src="find.png"></li></a><br>
+            <a href="sell.html"><li><img src="sell.png"></li></a><br>
+			<a href="service.html"><li><img src="service.png"></li></a><br>
+			<a href="replace.html"><li><img src="replace.png"></li></a><br>
+                </ul></span>
+		</div>
+        </div>
+       
+        <span class="photo"><img src="Cars 3.png" width="1900"></span>
+		<div class="square">
+			<div class="carsearch">
+				<select class="b1" id="carType" onchange="carChoosen()" style="font-size:28px !important;background-color: #fea021; color: #262a36; border-radius: 12px;"><br>
+				<option>--choose car--</option>
+				<option>MERCEDES</option>
+				<option>BMW</option>
+				<option>AUDI</option>
+				</select>
+				<select class="b2" id="carModel" style="font-size:26px !important;background-color: #fea021; color: #262a36;border-radius: 12px;">
+				<option>--Choose Model--</option>
+				</select>
+				<br><br>&nbsp;&nbsp;<button class="b3" onclick="searchCar()" style="font-size:25px !important; width:300px;height: 65px; background-color: #fea021; color: #262a36;border-radius: 12px;">SEARCH</button>
+				<div>
+					<img src="mercedes logo.png" onclick="mercedes()" style="cursor: pointer;transform: translate(130%,-40%);"><br>
+					<img src="bmw logo.png" onclick="bmw()" style="cursor: pointer;transform: translate(190%,142.5%);"><br>
+					<img src="Audi logo.png" onclick="audi()" style="cursor: pointer;transform: translate(130%,462%);"><br>
+					</div>
+			</div>
+			
+			<div>
+				<span style="position: absolute;background-color: #A9A9A9;border-radius: 36px;width: 680px;height: 530px;transform: translate(35px,390px);"></span>
+                <span  style="position: absolute;background-color: #A9A9A9;border-radius: 36px;width: 680px;height: 530px;transform: translate(760px,390px);"></span>
+					<span  style="position: absolute;background-color: #A9A9A9;border-radius: 36px;width: 680px;height: 530px;transform: translate(35px,1270px);"></span>
+                <span  style="position: absolute;background-color: #A9A9A9;border-radius: 36px;width: 680px;height: 530px;transform: translate(760px,1270px);"></span>
+					<span style="position: absolute;background-color: #A9A9A9;border-radius: 36px;width: 680px;height: 530px;transform: translate(35px,2070px);"></span>
+                <span style="position: absolute;background-color: #A9A9A9;border-radius: 36px;width: 680px;height: 530px;transform: translate(760px,2070px);"></span>
+				
+			</div>
+			<div>
+                <a href="Mercedes-Benz CLS-Class (C257).html">
+				<img src="Mercedes-Benz CLS-Class (C257).png" style="position: absolute; height: 350px;width: 640px;cursor: pointer;border-radius: 36px;transform: translate(53px,420px); " id="mercedesCls" ></a>
+                
+                <a href="Mercedes-Benz CLA-Class.html">
+				<img src="Mercedes-Benz CLA-Class.png" style=" position: absolute;height: 350px;width: 640px;cursor: pointer;border-radius: 36px;transform: translate(780px,420px)"  id="mercedesCla"></a>
+                
+                <a href="BMW 4 Series (G22).html">
+				<img src="BMW 4 Series (G22)6 big.png" style=" position: absolute;height: 350px;width: 640px;cursor: pointer;border-radius: 36px;transform: translate(53px,1295px)" id="bmw4Series"></a>
+                
+                 <a href="BMW 2 Series (F44).html">
+				<img src="BMW 2 Series (F44).png" style=" position: absolute;height: 350px;width: 640px;cursor: pointer;border-radius: 36px;transform: translate(780px,1295px)" id="bmw2Series"></a>
+                
+                <a href="Audi TT.html">
+				<img src="Audi TT.png" style=" position: absolute;height: 350px;width: 640px;cursor: pointer;border-radius: 36px;transform: translate(53px,2095px)" id="tt"></a>
+                
+                <a href="Audi e-tron (2020).html">
+				<img src="Audi e-tron (2020).png" style=" position: absolute;height: 350px;width: 640px;cursor: pointer;border-radius: 36px;transform: translate(780px,2095px)" id="etron"></a>
+			</div>
+			<div>
+				<h1 style="position: absolute;color: #000000;transform: translate(90px,765px);">Model :&nbsp;&nbsp;Mercedes-Benz CLS-Class (C257)<br>Price :&nbsp;&nbsp;<del>65,000&dollar;</del><br><span style="font-size: 42px !important; font: bolder;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;62,500&dollar;</span></h1>
+				<h1 style="position: absolute;color: #000000;transform: translate(820px,765.5px);">Model :&nbsp;&nbsp;Mercedes-Benz CLA-Class<br>Price :&nbsp;&nbsp;<del>40,000&dollar;</del><br><span style="font-size: 42px !important; font: bolder;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;38,000&dollar;</span></h1>
+				<h1 style="position: absolute;color: #000000;transform: translate(90px,1640px);">Model :&nbsp;&nbsp;BMW 4 Series (G22)<br>Price :&nbsp;&nbsp;<del>45,000&dollar;</del><br><span style="font-size: 42px !important; font: bolder;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;44,000&dollar;</span></h1>
+				<h1 style="position: absolute;color: #000000;transform: translate(820px,1640px);">Model :&nbsp;&nbsp;BMW 2 Series (F44)<br>Price :&nbsp;&nbsp;<del>35,000&dollar;</del><br><span style="font-size: 42px !important; font: bolder;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;33,000&dollar;</span></h1>
+				<h1 style="position: absolute;color: #000000;transform: translate(90px,2440px);">Model :&nbsp;&nbsp;Audi TT<br>Price :&nbsp;&nbsp;<del>50,000&dollar;</del><br><span style="font-size: 42px !important; font: bolder;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;45,000&dollar;</span></h1>
+				<h1 id="scroll-to" style="position: absolute;color: #000000;transform: translate(820px,2440px);">Model :&nbsp;&nbsp;Audi e-tron<br>Price :&nbsp;&nbsp;<del>65,000&dollar;</del><br><span style="font-size: 42px !important; font: bolder;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60,000&dollar;</span></h1>
+				</div>
+		</div>
+        
+        <script src="testing.js"></script>
+        <script src="joeJq.js"></script>
+    </body>
+</html>
