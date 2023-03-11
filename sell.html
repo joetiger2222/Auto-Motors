@@ -1,0 +1,232 @@
+<!DOCTYPE>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="wheel-icon.png">
+		<meta charset="utf-8">
+		<meta name="description" content="Best German Cars">
+		<title> AUTO MOTORS sell </title>
+		<link rel="stylesheet" href="sell.css" type="text/css" />
+		<script src="hend.js" defer></script>
+		<link rel="stylesheet" href="css/all.min.css">
+	</head>
+	<body>
+		<div>
+			<h3 style="position: absolute;transform: translate(310px,50px);color:#000;">Dark Mode</h3>
+		<img style="position:absolute;transform: translate(-610px,18px);" src="moon.png">
+		</div>
+		<div style="position: absolute;transform: translate(430px,37px);">
+			<label class="switch">
+			<input type="checkbox" id="dark" onclick="darkMode()">
+			<span class="slider round"></span>
+			</label>
+		</div>
+		<span class="logo"><img src="Home-logo1.png" onclick="Home();"></span>
+		<span class="signout"><img src="Sign Out2.png" onclick="SignOut();"></span>
+		<div class="Intro">
+			<span class="buttons">
+				<span class="buttons1">
+				<input type="button" name="Home" value="HOME" onclick="Home();"></span>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="buttons2">
+				<input type="button" name="Cars" value="CARS" onclick="Cars();"></span>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="buttons3">
+				<input type="button" name="Contact Us" value="CONTACT US" onclick="ContactUs();"></span>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="buttons4">
+				<input type="button" name="About Us" value="ABOUT US" onclick="AboutUs();"></span>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="buttons5">
+				<input style="font-size: 32px;" type="button" name="More" value="▼" onclick="moreoption();"></span>
+			</span>
+			<span><ul style="list-style: none;list-style-position: outside;width: 200px;background-color: #ff944d;opacity: 0.9;border-radius: 12px;padding-top: 15px;position: relative;z-index:10;font-family: Helvetica;font-size:16px; transform: translate(1440px,60px);display: none" id="pageList">
+			<a href="find.html"><li><img src="find.png"></li></a><br>
+            <a href="sell.html"><li><img src="sell.png"></li></a><br>
+			<a href="service.html"><li><img src="service.png"></li></a><br>
+			<a href="replace.html"><li><img src="replace.png"></li></a><br>
+                </ul></span>
+		</div>
+		<center>
+		<div>
+			<h2>&nbsp;&nbsp;Calculate your car's value.</h2>
+			<p>Where is this car currently located?</p>
+		</div>
+		</center>
+		<center>
+		<div class="zip1">
+			<form>
+				<input name="zip" type="text" class="zip" placeholder="Zip" required><br>
+			</form>
+		</div>
+		</center>
+		<center>
+		<div>
+			<p>Enter your vehicle's information</p>
+		</div>
+		</center>
+		<center>
+		<div class="contact-select">
+			<select name="make" required>
+				<option value="" selected disabled>select make</option>
+				<option value="A">Audi</option>
+				<option value="B">BMW</option>
+				<option value="M">Mercedes-Benz</option>
+			</select>
+			<select name="model" required>
+				<option value="" selected disabled>select model</option>
+				<option value="A" disabled >Audi</option>
+				<option value="A3">A3</option>
+				<option value="A4">A4</option>
+				<option value="A6">A6</option>
+				<option value="S3">S3</option>
+				<option value="S4">S4</option>
+				<option value="S6">S6</option>
+				<option value="e-tron">e-tron</option>
+				<option value="TT">TT</option>
+				<option value="B" disabled >BMW</option>
+				<option value="X6">X6</option>
+				<option value="X7">X7</option>
+				<option value="3 series">3 series</option>
+				<option value="5 series">5 series</option>
+				<option value="4 series(G22)">4 series(G22)</option>
+				<option value="4 series(F44)">4 series(F44)</option>
+				<option value="M" disabled >Mercedes-Benz</option>
+				<option value="EQC">EQC</option>
+				<option value="SUV">SUV</option>
+				<option value="GLE-Coupe">GLE-Coupe</option>
+				<option value="GLS-Interior">GLS-Interior</option>
+				<option value="CLS-Class(C257)">CLS-Class(C257)</option>
+				<option value="CLA-Class">CLA-Class</option>
+			</select>
+			<br>
+			<select name="year" required>
+				<option value="" selected disabled>select year</option>
+				<option value="2020">2020</option>
+			</select>
+			<select name="type" required>
+				<option value="1">Automatic</option>
+				<option value="2">Manual</option>
+			</select>
+			<br>
+			<center>
+			<div class="milleage1">
+				<form>
+				<input name="milleage" type="text" class="milleage" placeholder="Milleage" required><br>
+				<input type="checkbox" required>
+				<label>I'm still paying off this car (I have a lien)</label>
+				</form>
+			</div>
+			</center>
+		</div>
+		</center>
+		<h2>&nbsp;&nbsp;Sell it Yourself</h2>
+		<div>
+			<h3>&nbsp;&nbsp;Largest Car-Shopping Audience</h3>
+			<p>List today to reach over 37 million shoppers*</p>
+			<br><br><br>
+			<h3>&nbsp;&nbsp;Verified Buyers & Secure Payment</h3>
+			<p>For a safe, simple selling experience.</p>
+			<br><br><br>
+		</div>
+		<div>
+			<h2>Frequently Asked Questions</h2>
+		</div>
+		<center>
+		<div class="accordion">
+			<div class="accordion-item">
+				<div class="accordion-item-header">
+					What are the benefits of selling on my own?
+				</div>
+				<div class="accordion-item-body">
+					<div class="accordion-item-body-content">
+						When selling a vehicle, you have a couple convenient options, bringing it to a car dealership or selling privately.
+						Trading in at a dealership is a simple and fast option to sell your car for cash, though you could be selling to the dealer for a price less than what your car is worth.
+						Selling privately will give you the ability to connect with many interested buyers and the potential to make thousands more!
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<div class="accordion-item-header">
+					How long is my listing active for? Can I extend my listing?
+				</div>
+				<div class="accordion-item-body">
+					<div class="accordion-item-body-content">
+						Vehicle listings expire after 60 days. You can extend your listing at any time from your My Cars For Sale by clicking “Extend for free”.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<div class="accordion-item-header">
+						How/when will I receive my money?
+				</div>
+				<div class="accordion-item-body">
+					<div class="accordion-item-body-content">
+						For listings, we offer a safe and simple way to get your money via direct deposit once your sale is complete. It can take up to 3 business days to receive your cash in your account,
+						and you also have the option to accept the payment with the buyer’s own cash in hand.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<div class="accordion-item-header">
+					What is the best site to sell a car?
+				</div>
+				<div class="accordion-item-body">
+					<div class="accordion-item-body-content">
+						The best site to sell your car is one that will expose it to a wide group of people who are serious about buying. Sites such as Craigslist and Facebook Marketplace will cast a wide net,
+						but you'll spend a lot of time dealing with lowball offers or potential scammers. In our experience, we've had greater success with Autotrader,
+						which provides a nice combination of visibility and serious buyers.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<div class="accordion-item-header">
+					How can I sell my car fast?
+				</div>
+				<div class="accordion-item-body">
+					<div class="accordion-item-body-content">
+						The fastest way to sell your car is to get an Edmunds appraisal offer, then take it to CarMax to complete the sale and walk away with a check in hand.
+						If the Edmunds offer is not available in your area, you can still take it to CarMax for an appraisal, though it may take a little longer.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<div class="accordion-item-header">
+					Where can I sell my car?
+				</div>
+				<div class="accordion-item-body">
+					<div class="accordion-item-body-content">
+						You can sell your car on an online classified site like Autotrader, a social media outlet like Facebook Marketplace, or a consignment store, or trade it in at a dealership.
+						The best place to do so depends on how quickly you want to sell, how much effort you want to put in, and how willing you are to deal with strangers.
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<div class="accordion-item-header">
+					Is CarMax a good place to sell your car?
+				</div>
+				<div class="accordion-item-body">
+					<div class="accordion-item-body-content">
+						Yes, CarMax is one of the most convenient ways to sell your car. We've sold numerous vehicles to CarMax and have found the process to be quick and efficient.
+					</div>
+				</div>
+			</div>
+		</div>
+		</center>
+		<center>
+		<div class="sign-up-form">
+			<h1>Sign Up New</h1>
+			<form>
+			<input class="input-box" type="email" placeholder="Enter your email" required>
+			<input class="input-btn"type="submit" value="Sign Up">
+			</form>
+			<div class="centerdiv">
+				<a href="#"><i class="fab fa-2x fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-2x fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-2x fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-2x fa-youtube"></i></a>
+				<a href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
+			</div>
+		</div>
+		</center>
+    </body>
+</html>

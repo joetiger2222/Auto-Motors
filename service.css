@@ -1,0 +1,389 @@
+body
+{
+    background: #f1f1f1;
+		margin: 0;
+		padding: 0;
+    box-sizing: border-box;
+    font-family:Helvetica;
+    color: #454545;
+		text-align: center;
+}
+.Intro
+	{
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+	background-color: #82ccdd;width: 1900px;height: 110px;
+	}
+input
+	{
+		font-size: x-large !important; border: 20px;
+		background-color:#82ccdd;
+		font-weight: bold;
+		color: #000000;
+		margin: 0;
+		padding: 0;
+		
+	}
+.photo
+	{
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		left: 0;
+		top: 109px;
+	}
+.logo
+	{
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		left: 50px;
+		top: 20px;
+		cursor: pointer;
+	}
+.signout
+	{
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		left: 1725px;
+		top: 28px;
+		cursor: pointer;
+	}.buttons {
+		position: absolute;
+		left: 1000px;
+		top: 45px;
+		transform: translateX(-50%) translateY(-50%);
+		font-family: Helvetica;
+		display: inline-block;
+		border-radius: 4px;
+		border: none;
+		text-align: center;
+		font-size: 24px;
+		padding: 10px;
+		transition: 0.5s;
+		cursor: pointer;
+		margin: 5px;
+		width: 1000px;
+		}.buttons1:hover {
+  box-shadow: 0 24px 32px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.buttons2:hover {
+  box-shadow: 0 24px 32px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.buttons3:hover {
+  box-shadow: 0 24px 32px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.buttons4:hover {
+  box-shadow: 0 24px 32px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.buttons5:hover {
+  box-shadow: 0 24px 32px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}/* toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #000000;
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}.buttons span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttons span:after {
+  content: '\00bb';
+  color: white;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttons:hover span {
+  padding-right: 25px;
+}
+
+.buttons:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+li:hover {
+	background-color: #82ccdd;
+	transition: 0.5s;
+}
+li {
+	transform: translateX(-20px);
+}
+.repair-section , .service-section
+{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat" ,sans-serif;
+    box-sizing: border-box;
+}
+.inner-width
+{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.section-title
+{
+    text-align: center;
+    color: #454545;;
+    font-size: 50px;
+}
+.border
+{
+    width: 180px;
+    height: 3px;
+    background: #82ccdd;
+    margin: 30px auto;
+}
+.repair-container , .service-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.repair-box , .service-box
+{
+    max-width: 22.22%;
+    padding: 15px;
+    margin: 0 18px;
+    text-align:center;
+    color: #454545;
+    cursor: pointer;
+}
+.repair-icon , .service-icon
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #82ccdd;
+    color: #82ccdd;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+.service-icon
+{
+    border-radius: 50%;
+}
+.repair-icon i , .service-icon i
+{
+    line-height: 40px;
+    transform: rotate(-45deg);
+    font-size: 25px;
+}
+.repair-box:hover .repair-icon ,
+.service-box:hover .service-icon
+{
+    background: #82ccdd;
+    color: #454545;
+}
+.repair-title , .service-title
+{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family:Helvetica;
+}
+.repair-desc , .service-desc
+{
+    font-size: 15px;
+}
+.heading-title
+{
+    text-align: center;
+    color: #454545;
+    font-size: 30px;
+}
+.box
+{
+    width: 250px;
+    height: 250px;
+    margin: 20px 20px 50px 20px;
+    float: left;
+    box-shadow: 1px 4px 2px 2px #ffff50;
+    background-color: #82ccdd;
+    border-radius: 30%;
+}
+.Expert-title
+{
+    width: 200px;
+    height: 200px;
+    margin: 50px 0 0 20px;
+    font-size: 15px;
+    float: left;
+    padding: 7px;
+}
+.faq-title 
+{
+    width: 200px;
+    height: 200px;
+    margin: 50px 0 0 20px;
+    font-size: 15px;
+    float: left;
+    padding: 7px;
+}
+.Product-title
+{
+    width: 200px;
+    height: 200px;
+    margin: 55px 0 0 20px;
+    font-size: 15px;
+    float: left;
+    padding: 7px;
+}
+.sign-up-form
+{
+    width: 740px;
+    height: 350px;
+    box-shadow: 1px 4px 2px 2px #ffff50;
+    border-radius: 20px;
+    background: #f1f1f1;
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+}
+.sign-up-form h1
+{
+    margin-bottom: 30px;
+}
+.input-box , .input-btn
+{
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px 0;
+    outline: none;
+    background-color: #fff;
+}
+.input-btn
+{
+    width: 200px;
+    background-color: #82ccdd;
+    
+}
+.centerdiv
+{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px
+}
+.centerdiv a
+{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #82ccdd;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 1px 4px 2px 2px #ffff50;
+    position: relative;
+    overflow: hidden;
+}
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube, .fa-linkedin-in
+{
+    text-align: center;
+    margin-top: 10px;
+    color: #454545; 
+}
+.centerdiv a i
+{
+    transition: all 0.3s linear;
+}
+.centerdiv a:hover .fab
+{
+    transform: scale(1.3);
+    color: #000;
+}
+.hide-signup-btn
+{
+    color: #242424;
+    position: absolute;
+    top: 1000px;
+    right: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    opacity: 0.7;
+}
+@media screen and (max-width:960px) {
+    .repair-box , .service-box , .sign-up-form {
+      max-width: 45%;
+    }
+}
+@media screen and (max-width:768px) {
+    .repair-box , .service-box , .sign-up-form {
+      max-width: 50%;
+    }
+}
+@media screen and (max-width:480px) {
+    .repair-box , .service-box , .sign-up-form {
+      max-width: 100%;
+    }
+}
